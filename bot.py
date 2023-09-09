@@ -127,8 +127,8 @@ def get_file_svg(message):
                 list_games = os.listdir(rec_list_path)
                 if file_name in list_games:
                     rec_path = f'G:\programming\Bot\GoGamesRecords_SendUsers\{file_name}'
-                    with open(rec_path, 'rb') as f:
-                        bot.send_document(chat_id, f)
+                    with open(rec_path, 'rb') as fa:
+                        bot.send_document(chat_id, fa)
                     os.remove(rec_path)
                     list_games.clear()
                 else:
